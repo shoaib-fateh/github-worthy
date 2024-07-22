@@ -7,14 +7,22 @@ import {
   HomeComponentStyled,
   LinkStyled,
 } from "./home.styled";
+import { useNavigate } from "react-router-dom";
 
 const HomeComponent = () => {
+  const navigate = useNavigate();
   return (
     <HomeComponentStyled>
       <HeaderStyled>
         <LinkStyled to="/projects">Projects</LinkStyled>
         <LinkStyled to="/contacts">Contacts</LinkStyled>
-        <ButtonStyled>Try Yourself</ButtonStyled>
+        <ButtonStyled
+          onClick={() => {
+            navigate("/search");
+          }}
+        >
+          Try Yourself
+        </ButtonStyled>
       </HeaderStyled>
       <div>
         <BodyStyled>
@@ -23,9 +31,9 @@ const HomeComponent = () => {
         </BodyStyled>
         <FootStyled>
           <div className="description">
-            Hi, my name is Jiří Hofman. 👨‍💻👩‍🍼👦👶🍵🍺🤘
+            Hi, my name is Shoaib Fateh
             <br />
-            I'm building stuff at client IOclient IO and MindManagerMindManager
+            Experienced Full-Stack Developer | React.js & Node.js
           </div>
 
           <div className="activities">
