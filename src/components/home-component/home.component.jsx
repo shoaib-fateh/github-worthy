@@ -32,6 +32,16 @@ const HomeComponent = () => {
             In last 90 days on GitHub I pushed 11 commits, opened 1 PR, merged 4
             PRs, created 2 branches, made 1 comment in public repositories.
           </div>
+
+          <ButtonStyled
+            style={{
+              fontSize: "14px",
+              border: "none",
+              fontWeight: "bold",
+            }}
+          >
+            {`Calculate My Estimated Github Worth`.toUpperCase()}
+          </ButtonStyled>
         </FootStyled>
       </div>
     </HomeComponentStyled>
