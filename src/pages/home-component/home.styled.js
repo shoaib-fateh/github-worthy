@@ -43,6 +43,8 @@ export const BodyStyled = styled.div`
   display: flex;
   transition: 1s;
   padding: 0 0 30px;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     transform: scale(1.1);
@@ -55,6 +57,8 @@ export const BodyStyled = styled.div`
 
   img {
     border-radius: 100%;
+    width: 130px;
+    height: 130px;
   }
 `;
 
